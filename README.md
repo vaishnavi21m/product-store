@@ -7,18 +7,18 @@ This application allows users to browse products, search by name, filter by cate
 
 ### Implemented Features
 - **Local Dummy Data**: Products are stored locally in `src/data/products.json` containing id, name, price, category, rating, image, and description.
-- **Product Listing & Filtering**: Responsive product grid with real-time text search and category dropdown filtering. Includes loading and empty states.
+- **Product Listing & Category Filtering**: Responsive product grid with category dropdown filtering. Includes loading and empty states.
 - **Product Details Page**: Routing to `/product/:id` showing complete product information, back navigation, and an Add to Cart button.
 - **Shopping Cart**:
   - Add items to the cart
-  - View total item count in navigation badge and on the cart page
-  - Calculate total cart price
+  - Increase / decrease item quantities (`+` / `-`)
+  - Calculate total cart item count and price
   - Remove items from cart
-- **Responsive Layout**: Clean and basic CSS layout that works on desktop, tablet, and mobile.
+- **Responsive Layout**: Clean, basic CSS layout that works on desktop, tablet, and mobile.
 
-### Missing / Omitted Features
-- **Cart Quantity Adjustment**: Inside the cart page, quantity increment/decrement (+ / -) controls are not implemented (items are added as single units and removed directly).
-- **LocalStorage Persistence**: Cart state is stored in memory using React state (`useState`) and resets upon browser reload.
+### Missing / Omitted Features (Failed Requirements)
+- **Product Search**: Search by product name / keyword is completely omitted from the product listing page.
+- **LocalStorage Persistence**: Cart state is stored only in memory using React state (`useState`) and resets upon browser reload.
 
 ---
 

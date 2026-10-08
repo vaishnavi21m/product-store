@@ -5,7 +5,6 @@ import productsData from '../data/products.json';
 function ProductList({ onAddToCart }) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   useEffect(() => {
@@ -21,9 +20,7 @@ function ProductList({ onAddToCart }) {
   const categories = ['All', ...new Set(productsData.map((item) => item.category))];
 
   const filteredProducts = products.filter((product) => {
-    const matchesSearch = product.name.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
-    return matchesSearch && matchesCategory;
+    return selectedCategory === 'All' || product.category === selectedCategory;
   });
 
   if (loading) {
@@ -33,15 +30,11 @@ function ProductList({ onAddToCart }) {
   return (
     <div>
       <div className="filter-bar">
-        <input
-          type="text"
-          placeholder="Search products by name..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="search-input"
-        />
-
+        <label htmlFor="category-select" style={{ alignSelf: 'center', fontWeight: '500' }}>
+          Filter by Category:
+        </label>
         <select
+          id="category-select"
           value={selectedCategory}
           onChange={(e) => setSelectedCategory(e.target.value)}
           className="category-select"
@@ -56,7 +49,7 @@ function ProductList({ onAddToCart }) {
 
       {filteredProducts.length === 0 ? (
         <div className="state-message">
-          <p>No products found matching your search or category filter.</p>
+          <p>No products found in this category.</p>
         </div>
       ) : (
         <div className="product-grid">
