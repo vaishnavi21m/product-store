@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Bluetooth Headphones",
+    "price": 49.99,
+    "category": "Electronics",
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
+    "description": "High quality over-ear wireless headphones with noise isolation and long battery life."
+  },
+  {
+    "id": 2,
+    "name": "Classic Cotton T-Shirt",
+    "price": 19.99,
+    "category": "Clothing",
+    "rating": 4.2,
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500&q=80",
+    "description": "Comfortable 100% organic cotton everyday wear basic t-shirt in white."
+  },
+  {
+    "id": 3,
+    "name": "Smart Fitness Watch",
+    "price": 89.99,
+    "category": "Electronics",
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80",
+    "description": "Waterproof fitness tracker with heart rate monitor, sleep tracking, and notifications."
+  },
+  {
+    "id": 4,
+    "name": "Running Sports Shoes",
+    "price": 64.99,
+    "category": "Footwear",
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+    "description": "Lightweight breathable athletic sneakers designed for running and training."
+  },
+  {
+    "id": 5,
+    "name": "Minimalist Canvas Backpack",
+    "price": 39.99,
+    "category": "Accessories",
+    "rating": 4.1,
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80",
+    "description": "Durable water-resistant canvas laptop backpack for work, travel, and campus."
+  },
+  {
+    "id": 6,
+    "name": "Ceramic Coffee Mug",
+    "price": 12.50,
+    "category": "Home & Kitchen",
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&q=80",
+    "description": "Handmade ceramic mug with matte finish, perfect for your morning brew."
+  },
+  {
+    "id": 7,
+    "name": "Denim Jacket",
+    "price": 54.00,
+    "category": "Clothing",
+    "rating": 4.3,
+    "image": "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=500&q=80",
+    "description": "Vintage style durable blue denim jacket with brass buttons."
+  },
+  {
+    "id": 8,
+    "name": "Mechanical Gaming Keyboard",
+    "price": 79.99,
+    "category": "Electronics",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&q=80",
+    "description": "RGB backlit mechanical keyboard with tactile blue switches and detachable cable."
+  }
+]
