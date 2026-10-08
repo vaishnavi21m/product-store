@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Cart({ cartItems, onRemoveFromCart }) {
-  const totalItems = cartItems.length;
-  const totalPrice = cartItems.reduce((sum, item) => sum + item.price, 0);
+function Cart({ cartItems, onRemoveFromCart, onUpdateQuantity }) {
+  const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+  const totalPrice = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   if (cartItems.length === 0) {
     return (
@@ -27,31 +27,53 @@ function Cart({ cartItems, onRemoveFromCart }) {
         <thead>
           <tr>
             <th>Product</th>
-            <th>Category</th>
-            <th>Price</th>
-            <th>Qty</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
             <th>Action</th>
           </tr>
         </thead>
         <tbody>
-          {cartItems.map((item, index) => (
-            <tr key={`${item.id}-${index}`}>
+          {cartItems.map((item) => (
+            <tr key={item.id}>
               <td>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                   <img
                     src={item.image}
                     alt={item.name}
-                    style={{ width: '40px', height: '40px', objectFit: 'cover', borderRadius: '4px' }}
+                    style={{ width: '45px', height: '45px', objectFit: 'cover', borderRadius: '4px' }}
                   />
                   <span>{item.name}</span>
                 </div>
               </td>
-              <td>{item.category}</td>
               <td>${item.price.toFixed(2)}</td>
-              <td>1</td>
+              <td>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <button
+                    onClick={() => onUpdateQuantity(item.id, -1)}
+                    className="btn btn-secondary"
+                    style={{ padding: '2px 8px', fontSize: '1rem', lineHeight: '1.2' }}
+                    title="Decrease quantity"
+                  >
+                    -
+                  </button>
+                  <span style={{ minWidth: '24px', textAlign: 'center', fontWeight: 'bold' }}>
+                    {item.quantity}
+                  </span>
+                  <button
+                    onClick={() => onUpdateQuantity(item.id, 1)}
+                    className="btn btn-secondary"
+                    style={{ padding: '2px 8px', fontSize: '1rem', lineHeight: '1.2' }}
+                    title="Increase quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </td>
+              <td>${(item.price * item.quantity).toFixed(2)}</td>
               <td>
                 <button
-                  onClick={() => onRemoveFromCart(index)}
+                  onClick={() => onRemoveFromCart(item.id)}
                   className="btn btn-danger"
                 >
                   Remove
