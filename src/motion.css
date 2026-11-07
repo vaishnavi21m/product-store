@@ -1,0 +1,103 @@
+/* Visual polish + motion layer. Loaded after App.css; remove the import to revert. */
+:root{--ease:cubic-bezier(.2,.7,.2,1);--glow:0 14px 34px rgb(117 72 232/28%)}
+
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes grad{to{background-position:200% 0}}
+@keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.45)}100%{transform:scale(1)}}
+@keyframes beat{0%,100%{transform:scale(1)}20%{transform:scale(1.18)}40%{transform:scale(1)}}
+@keyframes check{0%{transform:scale(0) rotate(-40deg)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
+@keyframes sweep{to{transform:translateX(120%)}}
+
+/* Page + scroll motion */
+.page-fade{animation:rise .55s var(--ease) both}
+.reveal{display:flex;flex-direction:column;opacity:0;transform:translateY(30px);transition:opacity .7s ease var(--delay),transform .7s var(--ease) var(--delay)}
+.reveal>*{flex:1}
+.reveal.is-visible{opacity:1;transform:none}
+
+/* Header: soft glass instead of a hard outline */
+.site-header{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.site-header .header-inner{border:1px solid rgb(117 72 232/14%);box-shadow:0 10px 32px rgb(117 72 232/14%);transition:box-shadow .3s}
+.site-header .header-inner:hover{box-shadow:0 14px 38px rgb(117 72 232/22%)}
+.brand-mark{transition:transform .4s var(--ease)}
+.brand:hover .brand-mark{transform:rotate(-8deg) scale(1.08)}
+.header-icon{transition:transform .2s var(--ease),box-shadow .2s,background .2s}
+.header-icon:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgb(117 72 232/22%)}
+.cart-count{animation:pop .45s ease}
+
+/* Buttons */
+.button,.checkout-button,.category-filter{transition:transform .2s var(--ease),box-shadow .25s,background .2s,color .2s,border-color .2s}
+.button:hover:not(:disabled),.checkout-button:hover{transform:translateY(-2px)}
+.button:active:not(:disabled),.checkout-button:active,.category-filter:active{transform:scale(.97)}
+.button-primary,.checkout-button{position:relative;overflow:hidden}
+.button-primary:hover,.checkout-button:hover{box-shadow:var(--glow)}
+.button-primary::after,.checkout-button::after{content:"";position:absolute;inset:0;width:60%;left:-60%;background:linear-gradient(100deg,transparent,rgb(255 255 255/35%),transparent);transform:skewX(-20deg)}
+.button-primary:hover::after,.checkout-button:hover::after{animation:sweep .8s ease}
+.button span,.checkout-button span,.home-product-bottom a span{transition:transform .25s var(--ease)}
+.button:hover span,.checkout-button:hover span,.home-product-bottom a:hover span{transform:translateX(3px)}
+
+/* Hero entrance */
+.home-hero .eyebrow-pill,.home-hero h1,.home-hero .hero-copy>p,.home-hero .button{animation:rise .8s var(--ease) both}
+.home-hero h1{animation-delay:.12s}.home-hero .hero-copy>p{animation-delay:.24s}.home-hero .button{animation-delay:.36s}
+.home-hero .hero-art{animation:fade 1s ease both}
+.home-hero .hero-art>img{animation:float 7s ease-in-out infinite}
+.hero-copy h1 span{background:linear-gradient(90deg,#7548e8,#c46bff,#7548e8);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:grad 4s linear infinite}
+.shop-hero-copy>*{animation:rise .8s var(--ease) both}
+.shop-hero-copy h1{animation-delay:.12s}.shop-hero-copy p{animation-delay:.24s}.shop-hero-copy .button{animation-delay:.36s}
+.shop-hero>img{animation:fade 1s ease both}
+.shop-hero-script{animation:float 6s ease-in-out infinite}
+
+/* Category chips + search */
+.category-filter:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgb(117 72 232/16%)}
+.home-product-search,.shop-search{transition:box-shadow .25s,transform .25s}
+.home-product-search:focus-within,.shop-search:focus-within{box-shadow:0 0 0 3px rgb(117 72 232/20%),0 10px 26px rgb(117 72 232/14%)}
+
+.home-catalog{padding-top:44px}
+
+/* Product cards */
+.home-product-card{transition:transform .4s var(--ease),box-shadow .4s}
+.home-product-card:hover{transform:translateY(-8px);box-shadow:0 22px 46px rgb(60 30 130/16%)}
+.home-product-image{overflow:hidden}
+.home-product-image img{transition:transform .8s var(--ease);animation:fade .7s ease both}
+.home-product-card:hover .home-product-image img{transform:scale(1.07)}
+.home-category-tag{transition:transform .3s var(--ease),background .2s}
+.home-product-card:hover .home-category-tag{transform:translateY(-3px)}
+.home-product-title a{transition:color .2s}
+.home-product-title a:hover{color:var(--clay)}
+.home-product-bottom a{transition:background .2s,color .2s,border-color .2s,transform .2s}
+.home-product-bottom a:hover{background:var(--clay);color:#fff;border-color:var(--clay)}
+.home-search-empty,.empty-results,.empty-page{animation:rise .5s var(--ease) both}
+
+/* Product detail */
+.product-detail-image{overflow:hidden}
+.product-detail-image img{transition:transform .9s var(--ease)}
+.product-detail-image:hover img{transform:scale(1.05)}
+.product-detail-info>*{animation:rise .7s var(--ease) both}
+.product-detail-info>:nth-child(2){animation-delay:.06s}.product-detail-info>:nth-child(3){animation-delay:.12s}.product-detail-info>:nth-child(4){animation-delay:.18s}.product-detail-info>:nth-child(n+5){animation-delay:.24s}
+.quantity-control button{transition:background .15s,transform .12s}
+.quantity-control button:hover:not(:disabled){background:var(--sand)}
+.quantity-control button:active:not(:disabled){transform:scale(.88)}
+.cart-feedback{animation:rise .4s var(--ease) both}
+.service-promises>div{transition:transform .3s var(--ease)}
+.service-promises>div:hover{transform:translateY(-4px)}
+
+/* Cart */
+.cart-item{transition:box-shadow .3s,transform .3s var(--ease);animation:rise .45s var(--ease) both}
+.cart-item:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgb(60 30 130/12%)}
+.cart-item-image img{transition:transform .6s var(--ease)}
+.cart-item:hover .cart-item-image img{transform:scale(1.06)}
+.cart-item-heading>button{transition:transform .2s,background .2s,color .2s}
+.cart-item-heading>button:hover{transform:rotate(90deg)}
+.order-summary{animation:rise .6s var(--ease) .1s both}
+.order-success{animation:rise .6s var(--ease) both}
+.order-success>span{animation:check .7s var(--ease) .2s both}
+.empty-cart>span{display:inline-block;animation:beat 2s ease-in-out infinite}
+.empty-cart{animation:rise .6s var(--ease) both}
+
+.site-footer .brand{transition:opacity .2s}.site-footer .brand:hover{opacity:.75}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+}

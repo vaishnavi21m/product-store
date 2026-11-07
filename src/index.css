@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: #242033;
+  background: #f8f5ff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --paper: #faf8ff;
+  --ink: #242033;
+  --muted: #777184;
+  --line: #e8e4ef;
+  --clay: #7548e8;
+  --sand: #f0ebff;
+  --coral: #e48d78;
+  --peach: #f7c7a8;
+  --mint: #a7d8c8;
+  --sky: #a9c8ea;
+  --butter: #f2d887;
+  --rose: #dfa6bd;
+  --serif: 'DM Serif Display', Georgia, serif;
+  --sans: 'DM Sans', 'Segoe UI', sans-serif;
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 92% 10%, rgba(247, 199, 168, 0.16), transparent 28%),
+    radial-gradient(ellipse at 7% 55%, rgba(167, 216, 200, 0.13), transparent 32%),
+    linear-gradient(180deg, #fbf9ff 0%, #f5f0ff 48%, #f8f4fb 100%);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--clay);
+  outline-offset: 3px;
+}
+
+::selection {
+  color: white;
+  background: var(--clay);
+}

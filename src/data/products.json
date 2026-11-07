@@ -1,0 +1,242 @@
+[
+  {
+    "id": "basic-tee",
+    "name": "Basic Cotton T-Shirt",
+    "category": "Men Fashion",
+    "price": 799,
+    "rating": 4.6,
+    "reviews": "4.8k",
+    "description": "A classic everyday T-shirt crafted from soft cotton for a comfortable fit and effortless styling.",
+    "image": "/products/product-01.jpg"
+  },
+  {
+    "id": "everyday-tshirt",
+    "name": "Everyday T-Shirt",
+    "category": "Men Fashion",
+    "price": 699,
+    "rating": 4.4,
+    "reviews": "3.2k",
+    "description": "A comfortable everyday T-shirt with an easy fit, made for casual outfits and daily wear.",
+    "image": "/products/product-02.jpg"
+  },
+  {
+    "id": "relaxed-graphic-tee",
+    "name": "Relaxed Graphic Tee",
+    "category": "Men Fashion",
+    "price": 899,
+    "rating": 4.7,
+    "reviews": "2.9k",
+    "description": "A relaxed-fit graphic T-shirt made for casual outfits, easy layering, and laid-back weekends.",
+    "image": "/products/product-03.jpg"
+  },
+  {
+    "id": "everyday-polo",
+    "name": "Everyday Polo",
+    "category": "Men Fashion",
+    "price": 999,
+    "rating": 4.3,
+    "reviews": "1.8k",
+    "description": "A smart-casual polo with a neat collar and comfortable feel for everyday dressing.",
+    "image": "/products/product-04.jpg"
+  },
+  {
+    "id": "weekend-shirt",
+    "name": "Weekend Oxford Shirt",
+    "category": "Men Fashion",
+    "price": 1499,
+    "rating": 4.7,
+    "reviews": "2.1k",
+    "description": "A versatile button-up shirt with a relaxed shape for workdays, dinners, and weekends.",
+    "image": "/products/product-05.jpg"
+  },
+  {
+    "id": "oversized-hoodie",
+    "name": "Oversized Hoodie",
+    "category": "Women Fashion",
+    "price": 1799,
+    "rating": 4.6,
+    "reviews": "6.1k",
+    "description": "A relaxed, brushed-fleece hoodie with a soft feel and an easy oversized fit for everyday comfort.",
+    "image": "/products/product-06.jpg"
+  },
+  {
+    "id": "city-style-jacket",
+    "name": "City Style Jacket",
+    "category": "Women Fashion",
+    "price": 2499,
+    "rating": 4.8,
+    "reviews": "3.6k",
+    "description": "A polished lightweight jacket that adds an effortless finishing layer to everyday outfits.",
+    "image": "/products/product-07.jpg"
+  },
+  {
+    "id": "modern-streetwear",
+    "name": "Modern Streetwear Set",
+    "category": "Women Fashion",
+    "price": 2199,
+    "rating": 4.7,
+    "reviews": "2.4k",
+    "description": "A modern streetwear-inspired look combining easy movement with a confident silhouette.",
+    "image": "/products/product-08.jpg"
+  },
+  {
+    "id": "soft-knit-dress",
+    "name": "Soft Knit Dress",
+    "category": "Women Fashion",
+    "price": 1899,
+    "rating": 4.5,
+    "reviews": "1.9k",
+    "description": "A soft, easy-to-wear knit dress with a flattering shape for relaxed days and evenings out.",
+    "image": "/products/product-09.jpg"
+  },
+  {
+    "id": "weekend-layer",
+    "name": "Weekend Layer",
+    "category": "Women Fashion",
+    "price": 2299,
+    "rating": 4.8,
+    "reviews": "2.7k",
+    "description": "A light, versatile layer made for cool mornings, long walks, and relaxed weekends.",
+    "image": "/products/product-10.jpg"
+  },
+  {
+    "id": "relaxed-fit-tee",
+    "name": "Relaxed Fit Tee",
+    "category": "Women Fashion",
+    "price": 899,
+    "rating": 4.7,
+    "reviews": "2.2k",
+    "description": "A soft relaxed silhouette designed for casual outfits and comfortable all-day wear.",
+    "image": "/products/product-11.jpg"
+  },
+  {
+    "id": "everyday-overshirt",
+    "name": "Everyday Overshirt",
+    "category": "Men Fashion",
+    "price": 1999,
+    "rating": 4.7,
+    "reviews": "1.7k",
+    "description": "A lightweight extra layer with a little structure, made to throw on when the evening cools down.",
+    "image": "/products/product-12.jpg"
+  },
+  {
+    "id": "airflex-sneakers",
+    "name": "AirFlex Sneakers",
+    "category": "Footwear",
+    "price": 2599,
+    "rating": 4.7,
+    "reviews": "10k",
+    "description": "Step up your style with unmatched comfort. Lightweight, breathable and perfect for everyday wear.",
+    "image": "/products/product-13.jpg"
+  },
+  {
+    "id": "daylight-runner",
+    "name": "Daylight Runner",
+    "category": "Footwear",
+    "price": 2899,
+    "rating": 4.8,
+    "reviews": "4.2k",
+    "description": "A cushioned everyday runner with a breathable upper for comfortable steps from morning to night.",
+    "image": "/products/product-14.jpg"
+  },
+  {
+    "id": "court-classic",
+    "name": "Court Classic Sneakers",
+    "category": "Footwear",
+    "price": 2399,
+    "rating": 4.5,
+    "reviews": "3.6k",
+    "description": "A clean low-profile sneaker that brings a timeless court look to everyday outfits.",
+    "image": "/products/product-15.jpg"
+  },
+  {
+    "id": "weekend-canvas",
+    "name": "Weekend Canvas Shoes",
+    "category": "Footwear",
+    "price": 1599,
+    "rating": 4.6,
+    "reviews": "2.6k",
+    "description": "A lightweight canvas pair with a versatile profile for day plans and weekend walks.",
+    "image": "/products/product-16.jpg"
+  },
+  {
+    "id": "studio-sneakers",
+    "name": "Studio Everyday Sneakers",
+    "category": "Footwear",
+    "price": 2799,
+    "rating": 4.7,
+    "reviews": "3.1k",
+    "description": "A modern everyday sneaker with a supportive sole and a simple, easy-to-style design.",
+    "image": "/products/product-17.jpg"
+  },
+  {
+    "id": "noise-buds",
+    "name": "Noise Buds",
+    "category": "Accessories",
+    "price": 2249,
+    "rating": 4.5,
+    "reviews": "6.1k",
+    "description": "Clear, balanced sound in a pocket-sized case, with a comfortable fit for commutes and daily listening.",
+    "image": "/products/product-18.jpg"
+  },
+  {
+    "id": "firebolt-smartwatch",
+    "name": "Firebolt Smartwatch",
+    "category": "Accessories",
+    "price": 3899,
+    "rating": 4.6,
+    "reviews": "7.1k",
+    "description": "A clean, versatile timepiece with a modern silhouette that takes you from workouts to weekends.",
+    "image": "/products/product-19.jpg"
+  },
+  {
+    "id": "retro-sunglasses",
+    "name": "Retro Sunglasses",
+    "category": "Accessories",
+    "price": 799,
+    "rating": 4.5,
+    "reviews": "4.3k",
+    "description": "Lightweight retro frames with everyday UV protection and an easy-to-style silhouette.",
+    "image": "/products/product-20.jpg"
+  },
+  {
+    "id": "studio-headphones",
+    "name": "Studio Headphones",
+    "category": "Accessories",
+    "price": 2999,
+    "rating": 4.8,
+    "reviews": "3.8k",
+    "description": "Comfortable over-ear headphones with rich sound for focused work, travel, and downtime.",
+    "image": "/products/product-21.jpg"
+  },
+  {
+    "id": "everyday-tote",
+    "name": "Everyday Tote Bag",
+    "category": "Bags",
+    "price": 1749,
+    "rating": 4.7,
+    "reviews": "5.5k",
+    "description": "A roomy, structured tote for everyday essentials, with comfortable handles and a timeless shape.",
+    "image": "/products/product-23.jpg"
+  },
+  {
+    "id": "city-backpack",
+    "name": "City Backpack",
+    "category": "Bags",
+    "price": 2299,
+    "rating": 4.6,
+    "reviews": "2.8k",
+    "description": "A practical city backpack with space for daily essentials and an understated, versatile design.",
+    "image": "/products/product-24.jpg"
+  },
+  {
+    "id": "soft-structure-bag",
+    "name": "Soft Structure Bag",
+    "category": "Bags",
+    "price": 1999,
+    "rating": 4.8,
+    "reviews": "3.2k",
+    "description": "A quietly useful everyday bag with room for what matters and a shape that works with everything.",
+    "image": "/products/product-25.jpg"
+  }
+]
